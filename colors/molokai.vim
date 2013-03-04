@@ -99,7 +99,6 @@ hi Typedef         guifg=#66D9EF
 hi Type            guifg=#66D9EF               gui=none
 hi Underlined      guifg=#808080               gui=underline
 
-hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
 hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
@@ -112,6 +111,7 @@ if s:molokai_original == 1
    hi CursorColumn                  guibg=#3E3D32
    hi ColorColumn                   guibg=#3B3A32
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
+   hi VertSplit       guifg=#BCBCBC guibg=#3B3A32 gui=none
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
@@ -121,6 +121,7 @@ else
    hi CursorColumn                  guibg=#293739
    hi ColorColumn                   guibg=#232526
    hi LineNr          guifg=#465457 guibg=#232526
+   hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
    hi NonText         guifg=#465457
    hi SpecialKey      guifg=#465457
 end
@@ -205,7 +206,6 @@ if &t_Co > 255
    hi Type            ctermfg=81                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
-   hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
    hi VisualNOS                   ctermbg=237
    hi Visual                      ctermbg=237
    hi WarningMsg      ctermfg=231 ctermbg=236   cterm=bold
@@ -216,6 +216,7 @@ if &t_Co > 255
        hi CursorColumn                ctermbg=237
        hi ColorColumn                 ctermbg=237
        hi LineNr          ctermfg=250 ctermbg=237
+       hi VertSplit       ctermfg=250 ctermbg=237 cterm=none
        hi NonText         ctermfg=242
        hi SpecialKey      ctermfg=242
    else
@@ -223,6 +224,7 @@ if &t_Co > 255
        hi CursorColumn                ctermbg=237
        hi ColorColumn                 ctermbg=235
        hi LineNr          ctermfg=239 ctermbg=235
+       hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
