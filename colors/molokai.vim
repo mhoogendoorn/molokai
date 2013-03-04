@@ -102,6 +102,7 @@ hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
+hi Conceal         guifg=#d700ff guibg=bg
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -210,6 +211,7 @@ if &t_Co > 255
    hi Visual                      ctermbg=237
    hi WarningMsg      ctermfg=231 ctermbg=236   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
+   hi Conceal         ctermfg=165 ctermbg=bg
 
    if s:molokai_original == 1
        hi Comment         ctermfg=242
