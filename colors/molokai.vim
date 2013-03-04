@@ -47,7 +47,6 @@ hi Error           guifg=#960050 guibg=#1E0010
 hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
 hi Exception       guifg=#A6E22E               gui=bold
 hi Float           guifg=#AE81FF
-hi FoldColumn      guifg=#465457 guibg=#000000
 hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#A6E22E
 hi Identifier      guifg=#FD971F
@@ -112,6 +111,7 @@ if s:molokai_original == 1
    hi ColorColumn                   guibg=#3B3A32
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi VertSplit       guifg=#BCBCBC guibg=#3B3A32 gui=none
+   hi FoldColumn      guifg=#BCBCBC guibg=#3B3A32 gui=none
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
@@ -122,6 +122,7 @@ else
    hi ColorColumn                   guibg=#232526
    hi LineNr          guifg=#465457 guibg=#232526
    hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
+   hi FoldColumn      guifg=#465457 guibg=#000000
    hi NonText         guifg=#465457
    hi SpecialKey      guifg=#465457
 end
@@ -158,7 +159,6 @@ if &t_Co > 255
    hi ErrorMsg        ctermfg=161 ctermbg=235    cterm=bold
    hi Exception       ctermfg=112               cterm=bold
    hi Float           ctermfg=141
-   hi FoldColumn      ctermfg=239  ctermbg=16
    hi Folded          ctermfg=239  ctermbg=16
    hi Function        ctermfg=112
    hi Identifier      ctermfg=208               cterm=none
@@ -217,6 +217,7 @@ if &t_Co > 255
        hi ColorColumn                 ctermbg=237
        hi LineNr          ctermfg=250 ctermbg=237
        hi VertSplit       ctermfg=250 ctermbg=237 cterm=none
+       hi FoldColumn      ctermfg=250 ctermbg=237 cterm=none
        hi NonText         ctermfg=242
        hi SpecialKey      ctermfg=242
    else
@@ -225,6 +226,7 @@ if &t_Co > 255
        hi ColorColumn                 ctermbg=235
        hi LineNr          ctermfg=239 ctermbg=235
        hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
+       hi FoldColumn      ctermfg=239  ctermbg=16
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
