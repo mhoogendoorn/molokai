@@ -74,8 +74,6 @@ hi PreProc         guifg=#A6E22E
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
 hi Search          guifg=#FFFFFF guibg=#455354
-" marks column
-hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=bold
 hi SpecialComment  guifg=#7E8E91               gui=bold
 hi Special         guifg=#66D9EF guibg=bg      gui=italic
@@ -115,6 +113,7 @@ if s:molokai_original == 1
    hi FoldColumn      guifg=#BCBCBC guibg=#3B3A32 gui=none
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
+   hi SignColumn      guifg=#A6E22E guibg=#3B3A32
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#7E8E91
@@ -126,6 +125,7 @@ else
    hi FoldColumn      guifg=#465457 guibg=#000000
    hi NonText         guifg=#465457
    hi SpecialKey      guifg=#465457
+   hi SignColumn      guifg=#A6E22E guibg=#232526
 end
 
 "
@@ -188,8 +188,6 @@ if &t_Co > 255
    hi Repeat          ctermfg=161               cterm=bold
    hi Search          ctermfg=231 ctermbg=239
 
-   " marks column
-   hi SignColumn      ctermfg=112 ctermbg=235
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81 
@@ -222,6 +220,7 @@ if &t_Co > 255
        hi FoldColumn      ctermfg=250 ctermbg=237 cterm=none
        hi NonText         ctermfg=242
        hi SpecialKey      ctermfg=242
+       hi SignColumn      ctermfg=112 ctermbg=237
    else
        hi Comment         ctermfg=245
        hi CursorColumn                ctermbg=237
@@ -231,5 +230,6 @@ if &t_Co > 255
        hi FoldColumn      ctermfg=239  ctermbg=16
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
+       hi SignColumn      ctermfg=112 ctermbg=235
    endif
 end
