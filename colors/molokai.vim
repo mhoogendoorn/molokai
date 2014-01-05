@@ -104,7 +104,7 @@ hi Conceal         guifg=#d700ff guibg=bg
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
-   hi Comment         guifg=#75715E
+   hi Comment         guifg=#75715E               gui=italic
    hi CursorLine                    guibg=#3E3D32
    hi CursorColumn                  guibg=#3E3D32
    hi ColorColumn                   guibg=#3B3A32
@@ -153,7 +153,7 @@ if &t_Co > 255
    hi DiffAdd                     ctermbg=237
    hi DiffChange      ctermfg=244 ctermbg=238
    hi DiffDelete      ctermfg=125 ctermbg=232
-   hi DiffText                    ctermbg=238 cterm=bold
+   hi DiffText                    ctermbg=238 cterm=italic,bold
 
    hi Directory       ctermfg=112               cterm=bold
    hi Error           ctermfg=125 ctermbg=232
@@ -168,8 +168,8 @@ if &t_Co > 255
 
    hi Keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=185               cterm=none
-   hi Macro           ctermfg=144
-   hi SpecialKey      ctermfg=81
+   hi Macro           ctermfg=144               cterm=italic
+   hi SpecialKey      ctermfg=81                cterm=italic
 
    hi MatchParen      ctermfg=16  ctermbg=79 cterm=bold
    hi ModeMsg         ctermfg=185
@@ -190,14 +190,14 @@ if &t_Co > 255
 
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
-   hi Special         ctermfg=81 
+   hi Special         ctermfg=81                cterm=italic
 
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=239 ctermbg=fg
    hi StatusLineNC    ctermfg=244 ctermbg=232
-   hi StorageClass    ctermfg=208
+   hi StorageClass    ctermfg=208               cterm=italic
    hi Structure       ctermfg=81
-   hi Tag             ctermfg=161
+   hi Tag             ctermfg=161               cterm=italic
    hi Title           ctermfg=203
    hi Todo            ctermfg=231 ctermbg=bg   cterm=bold
 
@@ -212,7 +212,7 @@ if &t_Co > 255
    hi Conceal         ctermfg=165 ctermbg=bg
 
    if s:molokai_original == 1
-       hi Comment         ctermfg=242
+       hi Comment         ctermfg=242             cterm=italic
        hi CursorColumn                ctermbg=237
        hi ColorColumn                 ctermbg=237
        hi LineNr          ctermfg=250 ctermbg=237
@@ -222,7 +222,7 @@ if &t_Co > 255
        hi SpecialKey      ctermfg=242
        hi SignColumn      ctermfg=112 ctermbg=237
    else
-       hi Comment         ctermfg=245
+       hi Comment         ctermfg=245             cterm=italic
        hi CursorColumn                ctermbg=237
        hi ColorColumn                 ctermbg=235
        hi LineNr          ctermfg=239 ctermbg=235
